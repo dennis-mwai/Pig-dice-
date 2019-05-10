@@ -26,7 +26,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 ## Link to live site
 
-Find the landing page [here].
+Find the landing page [here](https://dennis-mwai.github.io/Pig-dice-/).
 
 ## Technologies used
 
