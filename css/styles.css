@@ -1,0 +1,68 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#currentscoreplayer1{
+    background-color: red;
+}
+
+#currentscoreplayer2{
+    background-color: blue;
+}
+
+.col-md-6{
+    height: 80vh;
+    text-align: center;
+    border-style: solid;
+}
+
+.col1{
+    border-right-style: none;
+}
+
+.col2{
+    border-left-style: none;
+}
+
+.card-body{
+    width: 150px;
+    height: 100px;
+}
+
+.card{
+    background: none;
+    border: none;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    float: left;
+    width: 100%;
+}
+
+.score{
+    position: absolute;
+    top: 20%;
+}
+
+#newgame{
+    position: absolute;
+    right: -50px;
+    top: 10px;
+}
+
+#roll{
+    position: absolute;
+    right: -50px;
+    bottom: 300px;
+}
+
+#hold{
+    position: absolute;
+    right: -35px;
+    bottom: 200px;
+}
+
+h5{
+    padding-left: 200px; 
+}

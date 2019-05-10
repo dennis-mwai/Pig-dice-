@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,59 @@
     <script src="/js/scripts.js"></script>
     <title>Pig Dice</title>
 </head>
+
 <body>
-    
+    <section class="jumbotron">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col1">
+                    <div>
+                        <h1>Player 1</h1>
+                    </div>
+
+                    <div>
+                        <p> <input type="button" id="newgame" value="New Game" /> </p>
+                    </div>
+
+                    <div>
+                        <p> <input type="button" id="roll" value="Roll Dice" /> </p>
+                    </div>
+
+                    <div>
+                        <p> <input type="button" id="hold" value="Hold" /> </p>
+                    </div>
+
+                    <div>
+                        <h5 class="score">score:</h5>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" id="currentscoreplayer1">
+                            <p class="card-text">
+                                Current score
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col2">
+                    <div>
+                        <h1>Player 2</h1>
+                    </div>
+
+                    <div>
+                        <h5 class="score">score:</h5>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" id="currentscoreplayer2">
+                            <p class="card-text">
+                                Current score
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
