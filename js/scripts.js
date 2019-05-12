@@ -68,5 +68,26 @@ $().ready(()=>{
 
   // player 2
 
- 
+  $('#btnp2roll').on('click',()=>{
+    $('#btnp2pass').removeClass('disabled');
+    $('#btnp1roll').addClass('disabled');
+    $('#btnp1pass').addClass('disabled');
+    var p2rollval = rollDice();
+    p2rollsarray.push(p2rollval);
+    var totalScore = p2rollsarray.reduce((prevVal,currentVal)=>{
+      return prevVal+currentVal;
+    });
+    p2total = totalScore;
+    $('#p2score').text(totalScore);
+    p2rolls++;
+    $('#btn2').text(p2rolls)
+    $('#p2 ul').prepend(`<li>Roll ${p2rolls} value is ${p2rollval}.</li>`);
+    checkWinner();
+  });
+
+  $('#btnp2pass').on('click',()=>{
+    $('#btnp1roll').removeClass('disabled');
+    $('#btnp2roll').addClass('disabled');
+    $('#btnp2pass').addClass('disabled');
+  });
 });
