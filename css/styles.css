@@ -51,12 +51,6 @@ body{
     top: 10px;
 }
 
-#roll{
-    position: absolute;
-    right: -50px;
-    bottom: 300px;
-}
-
 #hold{
     position: absolute;
     right: -35px;
