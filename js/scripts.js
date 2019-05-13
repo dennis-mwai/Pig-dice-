@@ -48,9 +48,9 @@ $().ready(() => {
 
 
   $('#btnp1roll').on('click', () => {
-    $('#btnp2roll').addClass('disabled');
-    $('#btnp2pass').addClass('disabled');
-    $('#btnp1pass').removeClass('disabled');
+    $('#btnp2roll').attr('disabled', true);
+    $('#btnp2pass').attr('disabled', true);
+    $('#btnp1pass').attr('disabled', false);
     var p1rollval = rollDice();
 
     if (p1rollval == 1) {
@@ -71,9 +71,9 @@ $().ready(() => {
 
 
   $('#btnp1pass').on('click', () => {
-    $('#btnp2roll').removeClass('disabled');
-    $('#btnp1pass').addClass('disabled');
-    $('#btnp1roll').addClass('disabled');
+    $('#btnp2roll').attr('disabled', false);
+    $('#btnp1pass').attr('disabled', true);
+    $('#btnp1roll').attr('disabled', true);
   });
 
   // player 2
@@ -87,9 +87,9 @@ $().ready(() => {
   });
 
   $('#btnp2roll').on('click', () => {
-    $('#btnp2pass').removeClass('disabled');
-    $('#btnp1roll').addClass('disabled');
-    $('#btnp1pass').addClass('disabled');
+    $('#btnp2pass').attr('disabled', false);
+    $('#btnp1roll').attr('disabled', true);
+    $('#btnp1pass').attr('disabled', true);
     var p2rollval = rollDice();
 
 
@@ -110,8 +110,8 @@ $().ready(() => {
   });
 
   $('#btnp2pass').on('click', () => {
-    $('#btnp1roll').removeClass('disabled');
-    $('#btnp2roll').addClass('disabled');
-    $('#btnp2pass').addClass('disabled');
+    $('#btnp1roll').attr('disabled', false);
+    $('#btnp2roll').attr('disabled', true);
+    $('#btnp2pass').attr('disabled', true);
   });
 });

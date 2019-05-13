@@ -10,8 +10,12 @@ ul li{
 .card{
     display: none;
     min-width:400px; 
-    margin: 10px;
-    background-color: rgb(153, 245, 245);
+    min-height: 500px;
+    margin: 5px;
+    background-image: url(/images/die.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card-list{
@@ -27,6 +31,10 @@ ul li{
     background-color: blueviolet;
 }
 
+.card + .card {
+    margin: 0 0 0 300px;
+   }
+
 @media screen and (max-width: 768px) {
     .jumbotron{
         background-color: black;
@@ -36,5 +44,7 @@ ul li{
     .label-name{
         color: azure;
     }
-
+    .card + .card {
+        margin: 0 0 0 0px;
+       }
 }
