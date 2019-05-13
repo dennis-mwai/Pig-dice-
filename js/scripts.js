@@ -17,10 +17,8 @@ function checkWinner() {
     $('#p2').hide(300);
     $('#diswin').show(300)
     $('#diswin').append(`
-      <div class = 'card' style = 'margin:10%'>
         <div class = 'card-body'> 
           <p style='text-align:center;'>The winner is player1 with a total score of ${p1total}</p>
-        </div>
       </div>
     `);
   } else if (p2total >= 100 && p2total > p1total) {
@@ -28,10 +26,8 @@ function checkWinner() {
     $('#p1').hide(300);
     $('#diswin').show(300)
     $('#diswin').append(`
-      <div class = 'card' style = 'margin:10%'>
         <div class = 'card-body'> 
           <p style='text-align:center;'>The winner is player2 with a total score of ${p2total}</p>
-        </div>
       </div>
     `);
   };
@@ -56,6 +52,7 @@ $().ready(() => {
     $('#btnp2pass').addClass('disabled');
     $('#btnp1pass').removeClass('disabled');
     var p1rollval = rollDice();
+
     if (p1rollval == 1) {
       alert('you have rolled a one, pass to next player')
     } else {
@@ -71,14 +68,6 @@ $().ready(() => {
       checkWinner();
     }
   });
-
-
-
-
-
-
-
-
 
 
   $('#btnp1pass').on('click', () => {
@@ -102,6 +91,8 @@ $().ready(() => {
     $('#btnp1roll').addClass('disabled');
     $('#btnp1pass').addClass('disabled');
     var p2rollval = rollDice();
+
+
     if (p2rollval == 1) {
       alert('you have rolled a one, pass to next player')
     } else {
