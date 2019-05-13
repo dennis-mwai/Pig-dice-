@@ -38,6 +38,7 @@ function checkWinner() {
 };
 
 
+
 $().ready(() => {
   // player 1
 
@@ -55,6 +56,9 @@ $().ready(() => {
     $('#btnp2pass').addClass('disabled');
     $('#btnp1pass').removeClass('disabled');
     var p1rollval = rollDice();
+    if(p1rollval == 1){
+      alert('you have rolled a one, pass to next player')
+    }else{
     p1rollsarray.push(p1rollval);
     var totalScore = p1rollsarray.reduce((prevVal, currentVal) => {
       return prevVal + currentVal;
@@ -65,6 +69,7 @@ $().ready(() => {
     $('#btn1').text(p1rolls);
     $('#p1 ul').prepend(`<li>Roll ${p1rolls} value is ${p1rollval}.</li>`);
     checkWinner();
+  }
   });
 
 
