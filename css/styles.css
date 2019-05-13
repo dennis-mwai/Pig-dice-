@@ -16,3 +16,7 @@ ul li{
     max-height:400px; 
     overflow-y: scroll;
 }
+
+#diswin{
+    display:none;
+}
