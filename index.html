@@ -17,13 +17,21 @@
 
 
     <div class="container">
-        <form autocomplete="off">
+        <form autocomplete="off" id="form-player1">
             <div class="form-group">
-                <label for="name">Player Name</label>
-                <input type="text" name="name" class="name">
+                <label for="name">Enter your name player 1</label>
+                <input type="text" name="name" class="name1">
             </div>
-            <button class="btn btn-success" type="submit" id="submit">Submit</button>
+            <button class="btn btn-success" type="submit" id="submit-player1-name">Submit</button>
         </form>
+
+        <form autocomplete="off" id="form-player2">
+                <div class="form-group">
+                    <label for="name">Enter your name player 2</label>
+                    <input type="text" name="name" class="name2">
+                </div>
+                <button class="btn btn-success" type="submit" id="submit-player1-name">Submit</button>
+            </form>
     </div>
 
 
@@ -36,7 +44,7 @@
         <div class="row">
             <div class="card" id="p1" style="min-width:400px; margin: 10px">
                 <div class="card-header">
-                    <p class="card-title">Player <span id='player1-id'></span></p>
+                    <p class="card-title">Player <span id='player1-id' class="player1name"></span></p>
                 </div>
                 <div class="card-body">
                     <ul class="card-list" style="max-height:400px; overflow-y: scroll;">
@@ -52,7 +60,7 @@
             <!-- player 2 -->
             <div class="card" id="p2" style="min-width:400px; margin: 10px">
                 <div class="card-header">
-                    <p class="card-title">Player <span id="player2-id"></span></p>
+                    <p class="card-title">Player <span id="player2-id" class="player2name"></span></p>
                 </div>
                 <div class="card-body">
                     <ul class="card-list" style="max-height:400px; overflow-y: scroll;">

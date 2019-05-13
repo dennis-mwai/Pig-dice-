@@ -10,7 +10,6 @@ var p1total = 0;
 var p2rolls = 0;
 var p2rollsarray = [];
 var p2total = 0;
-var name = document.getElementsByClassName("name").val();
 
 function checkWinner(){
   if (p1total >= 100 && p1total>p2total){
@@ -58,12 +57,25 @@ $().ready(()=>{
     checkWinner();
   });
 
+  
 
 
-  $('#submit').on('submit',(e)=>{
+
+  $('#form-player1').on('submit',(e)=>{
     e.preventDefault();
-    $('#player1-id').text(name)
+    var name = $(".name1").val();
+    $('.player1name').text(name);
+    $('#form-player1').hide();
   });
+
+  $('#form-player2').on('submit',(e)=>{
+    e.preventDefault();
+    var name = $(".name2").val();
+    $('.player2name').text(name);
+    $('#form-player2').hide();
+  });
+
+
 
   $('#btnp1pass').on('click',()=>{
     $('#btnp2roll').removeClass('disabled');
