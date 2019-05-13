@@ -5,3 +5,7 @@ ul{
 ul li{
     size: 10px;
 }
+
+.card{
+    display: none;
+}
