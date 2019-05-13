@@ -9,7 +9,8 @@ ul li{
 .card{
     display: none;
     min-width:400px; 
-    margin: 10px
+    margin: 10px;
+    background-color: rgb(153, 245, 245);
 }
 
 .card-list{
