@@ -56,28 +56,28 @@ $().ready(() => {
     $('#btnp2pass').addClass('disabled');
     $('#btnp1pass').removeClass('disabled');
     var p1rollval = rollDice();
-    if(p1rollval == 1){
+    if (p1rollval == 1) {
       alert('you have rolled a one, pass to next player')
-    }else{
-    p1rollsarray.push(p1rollval);
-    var totalScore = p1rollsarray.reduce((prevVal, currentVal) => {
-      return prevVal + currentVal;
-    });
-    p1total = totalScore;
-    $('#p1score').text(totalScore);
-    p1rolls++;
-    $('#btn1').text(p1rolls);
-    $('#p1 ul').prepend(`<li>Roll ${p1rolls} value is ${p1rollval}.</li>`);
-    checkWinner();
-  }
+    } else {
+      p1rollsarray.push(p1rollval);
+      var totalScore = p1rollsarray.reduce((prevVal, currentVal) => {
+        return prevVal + currentVal;
+      });
+      p1total = totalScore;
+      $('#p1score').text(totalScore);
+      p1rolls++;
+      $('#btn1').text(p1rolls);
+      $('#p1 ul').prepend(`<li>Roll ${p1rolls} value is ${p1rollval}.</li>`);
+      checkWinner();
+    }
   });
 
 
 
 
 
-  
- 
+
+
 
 
 
@@ -102,16 +102,20 @@ $().ready(() => {
     $('#btnp1roll').addClass('disabled');
     $('#btnp1pass').addClass('disabled');
     var p2rollval = rollDice();
-    p2rollsarray.push(p2rollval);
-    var totalScore = p2rollsarray.reduce((prevVal, currentVal) => {
-      return prevVal + currentVal;
-    });
-    p2total = totalScore;
-    $('#p2score').text(totalScore);
-    p2rolls++;
-    $('#btn2').text(p2rolls)
-    $('#p2 ul').prepend(`<li>Roll ${p2rolls} value is ${p2rollval}.</li>`);
-    checkWinner();
+    if (p2rollval == 1) {
+      alert('you have rolled a one, pass to next player')
+    } else {
+      p2rollsarray.push(p2rollval);
+      var totalScore = p2rollsarray.reduce((prevVal, currentVal) => {
+        return prevVal + currentVal;
+      });
+      p2total = totalScore;
+      $('#p2score').text(totalScore);
+      p2rolls++;
+      $('#btn2').text(p2rolls)
+      $('#p2 ul').prepend(`<li>Roll ${p2rolls} value is ${p2rollval}.</li>`);
+      checkWinner();
+    }
   });
 
   $('#btnp2pass').on('click', () => {
