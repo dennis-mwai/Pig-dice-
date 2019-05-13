@@ -4,6 +4,7 @@ ul{
 
 ul li{
     size: 10px;
+    list-style: none;
 }
 
 .card{
