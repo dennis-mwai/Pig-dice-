@@ -26,3 +26,15 @@ ul li{
 .jumbotron{
     background-color: blueviolet;
 }
+
+@media screen and (max-width: 768px) {
+    .jumbotron{
+        background-color: black;
+        display: inline-block;
+    }    
+
+    .label-name{
+        color: azure;
+    }
+
+}
