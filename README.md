@@ -4,7 +4,7 @@ Pig dice is a game which in its basic form is played by a single 6-sided die. Th
 
 ## Project Description
 
-This webpage outlines a full range of services offered by the company. The site incorporates visual designs and vorkflows meant to solicit user feedback and alerts the user whan their names, emails and comments are recieved.
+This project details a gaming website where 2 players play with a single die. The players are promted to input their names before they proceed to the actual page where they take turns to roll the die. Each time a player rolls, the die can hit any number from 1-6. When a player hits a score of 1, the page displays the hit and asks the player to pass the die. The first player to score 100 points or more wins.
 
 ## Author
 
