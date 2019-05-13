@@ -1,4 +1,4 @@
-ul{
+GITul{
     list-style-type: none;
 }
 
@@ -12,7 +12,7 @@ ul li{
     min-width:400px; 
     min-height: 500px;
     margin: 5px;
-    background-image: url(/images/die.png);
+    background-image: url("/images/die.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
