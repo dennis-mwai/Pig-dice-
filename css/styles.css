@@ -8,4 +8,11 @@ ul li{
 
 .card{
     display: none;
+    min-width:400px; 
+    margin: 10px
+}
+
+.card-list{
+    max-height:400px; 
+    overflow-y: scroll;
 }
