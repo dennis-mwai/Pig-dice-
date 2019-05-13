@@ -1,6 +1,5 @@
 function rollDice(){
   return Math.ceil(Math.random() * 6);
-
 }
 
 
@@ -11,6 +10,7 @@ var p1total = 0;
 var p2rolls = 0;
 var p2rollsarray = [];
 var p2total = 0;
+var name = document.getElementsByClassName("name").val();
 
 function checkWinner(){
   if (p1total >= 100 && p1total>p2total){
@@ -59,6 +59,11 @@ $().ready(()=>{
   });
 
 
+
+  $('#submit').on('submit',(e)=>{
+    e.preventDefault();
+    $('#player1-id').text(name)
+  });
 
   $('#btnp1pass').on('click',()=>{
     $('#btnp2roll').removeClass('disabled');
